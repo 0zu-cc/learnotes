@@ -16,7 +16,7 @@ master　　默认分支(除master外其他分支一般可任意命名)
 
 ### <font color=#69bad9>1.基本命令(IDE中都是按钮/选项)</font>
 |命令|含义|
-|:|-|
+|:-|-|
 |**git config --list** |列出所有设置信息|
 |git config --global user.name |设置协作者信息,**不加global则只为项目设置**|
 |git config --global user.email|设置协作邮箱|
