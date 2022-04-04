@@ -13,7 +13,7 @@
 
 >工具类utils　　配置类config　　异常类exception　　 拦截器interceptor　　过滤器filter　　常量类constant
 
-　　最简单的目录结构:<br>![入门目录](/Img/SpringBootStructure.png)
+　　最简单的目录结构:<br>![入门目录](../../Img/SpringBootStructure.png)
 
 ### <font color=#69bad9>2.涉及工具</font>
 a.SpringBoot　　b.Lombok　　c.MySQL8.0　　d.Mybatis　　e.Maven　　f.H5

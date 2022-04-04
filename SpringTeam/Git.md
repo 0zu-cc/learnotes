@@ -6,8 +6,8 @@
 >3.编辑改动对比**diff**,标记**tag**和取出**checkout**
 
 ### 0.核心认知:  
-**对git来说,每个人的工作区(目录)都是一个完整的存储库**  
-**<font color=#69bfff>本地仓库: 版本库.git的上一级文件夹  
+**<font>对git来说,每个人的工作区(目录)都是一个完整的存储库  
+本地仓库: 版本库.git的上一级文件夹  
 暂存区index/stage: 版本库.git下的index文件(2进制)  
 版本记录区HEAD: 版本库下的HEAD文件
 </font>**<br>
@@ -22,10 +22,15 @@ master　　默认分支(除master外其他分支一般可任意命名)
 |git config --global user.email|设置协作邮箱|
 |**git init {repo name}** |初始化repo 加repo name在当前目录建立repo<br>不加则以当前目录为repo|
 |**git add <filename/\*/.>** |暂存,选择*或.表示暂存全部修改过的文件(对于上次暂存)|
-|**git status -s** |查看repo状态,不加-s查看完整状态(比较啰嗦)|
+|**git status -s** |查看repo状态,不加-s查看完整状态(比较啰嗦)<br>A表示暂存　　M表示已修改　　??表示未跟踪|
 |**git commit -m** "提交目的" |提交到HEAD,HEAD指向最近一次提交后本地仓库的版本|
 |git branch {name} |查看当前存在的分支,加name创建一个叫name的新分支|
 |**git checkout <branch name>**|**切换到name分支**|
 |git checkout -b <name> |**创建并切换到name分支**|
 |git merge {name} |把name分支合并到master(主分支,不一定是master)<br>**不加name则直接提交到远程仓库**|
 |git branch -d name |<font color=red>**删除分支**</font>|
+|**git diff**|工作区与暂存区文件差异对比|
+|**git diff --staged**|暂存区与HEAD指向的提交区比较|
+|**git commit -a**|跳过暂存区**直接提交**|
+|git rm --cache 文件|从版本库清除跟踪|
+|git mv filename_old filename_new|重命名文件|
