@@ -5,7 +5,7 @@
 
 |markdown|解析效果|
 |:---:|:---:|
-|#(space)一级标题|<font size=6>一级标题</font>|　　
+| #(space)一级标题|<font size=6>一级标题</font>|
 |##(space)二级标题|<font size=5>二级标题</font>|
 |###(space)三级标题|<font size=4>三级标题</font>|
 
@@ -20,8 +20,8 @@
 
 
 >这是  
-一个  
-多行引用
+>一个  
+>多行引用
 
 `<br>`是换行　　
 \`printf()\`解析效果:`printf()`<br />
@@ -45,12 +45,12 @@ int main(void)
 ---
 
 支持的语言主要有:<br>
-- c/cpp，Java，Python
-- html，XML，YAML，CSS，Js/Ts，Json
-- Go，Rust，Kotlin，Gradle，Groovy
-- Markdown，Makefile，Dockerfile
-- Lua，Julia，Haskell，PHP，Ruby，Lisp，Perl
-- SQL，Objective-c，R，Clojure，Verilog
+-   c/cpp，Java，Python
+-   html，XML，YAML，CSS，Js/Ts，Json
+-   Go，Rust，Kotlin，Gradle，Groovy
+-   Markdown，Makefile，Dockerfile
+-   Lua，Julia，Haskell，PHP，Ruby，Lisp，Perl
+-   SQL，Objective-c，R，Clojure，Verilog
 
 上面是无序列表,下面是有序列表:<br />
 1.第一个<br />
@@ -67,8 +67,8 @@ a<sup>b</sup>
 
 ---
 
-- [x] 这是一个多选框
-- [ ] 这也是多选框😊<br />
+-   [x] 这是一个多选框
+-   [ ] 这也是多选框😊<br />
 
 ![图片](https://www.markdown.xyz/assets/images/tux.png)
 [![带链接的图片](https://www.markdown.xyz/assets/images/shiprock.jpg)](https://baidu.com)

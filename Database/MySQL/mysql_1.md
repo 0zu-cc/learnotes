@@ -39,6 +39,8 @@ use mysql; <br> select user,host from user;
 | like子句(模糊匹配):where {字段1} like '%a' | 筛选字段1以a结尾的行,%范围占位符,_单位占位符 |
 | like子句示例:'%a%' '\_a\_' [] \[^] | 中间有a 三位且中间是a 类似正则 查询内容含%,_等可用[]括起来 |
 | create table if not exist {表名}(<br> 字段1 type auto_increment primary key,<br> 字段2 type not null,<br> ...,<br> primary key(某字段) <br>)engine=InnoDB default charset=utf8; | 建表 |
-| select e1,... from {表1}{where} union {all/distinct} from {表2}{where}; | union查询, distinct不显示重复数据,all显示,默认distinct |
-| select e1,... form {表} group by {字段}; | group by子句,e1可以是字段也可以是**函数** |
-| select f1... from table1... order by f1 {ASC/DESC(降序)} | order by子句,默认ASC(升序) |
+| select e1,... from {表1}{where} union {all/distinct} select e',... from {表2}{where}; | union查询, distinct不显示重复数据,all显示,默认distinct |
+| select e1,... form {表} group by {字段}; | group by分组子句,e1可以是字段也可以是**函数** |
+| select f1... from table1... order by f1 {ASC/DESC(降序)} | order by排序子句,默认ASC(升序) |
+
+## [菜鸟MySQL教程](https://www.runoob.com/mysql/mysql-tutorial.html) ##
